@@ -74,7 +74,8 @@ export default defineNuxtConfig({
   },
 
   routeRules: {
-    '/': { redirect: '/getting-started', prerender: false },
+    '/': { redirect: '/getting-started/introduction', prerender: false },
+    '/getting-started': { redirect: '/getting-started/introduction', prerender: false },
     '/getting-started/installation': { redirect: '/getting-started/installation/nuxt', prerender: false },
     '/getting-started/icons': { redirect: '/getting-started/icons/nuxt', prerender: false },
     '/getting-started/color-mode': { redirect: '/getting-started/color-mode/nuxt', prerender: false },
